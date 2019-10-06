@@ -1,0 +1,45 @@
+{
+    "name": "decency/nova-input-group",
+    "description": "A Laravel Nova text field formatted as input group.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "homepage": "https://github.com/decency-be/nova-input-group",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Diels",
+            "email": "tim@decency.be",
+            "homepage": "https://decency.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Decency\\InputGroup\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Decency\\InputGroup\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
